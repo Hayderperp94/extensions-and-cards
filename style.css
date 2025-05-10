@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+font-family: 'Noto Sans', sans-serif;}
+
+body {
+    background-color: lightgrey;
+    
+}
+
+.main-wrapper {
+    width: 100%;
+    max-width: 1300px;
+    margin: 20px auto;
+}
+
+.search-bar-section {
+    background-color: white;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.extension-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px;
+    border-radius: 16px;
+    background-color: white;
+    font-weight: bold;
+    border: 1px solid grey; /* fixed the missing color */
+}
+
+.flex1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+
+.text {
+ padding-top: 10px;
+
+}
+
+.card {
+  display: flex; /* Enables Flexbox layout for internal elements */
+  flex-direction: column; /* Arranges children vertically (top to bottom) */
+  justify-content: space-between; /* Adds space between top and bottom sections (e.g., content and footer) */
+  height: 200px; /* Fixed height for all cards to ensure uniform size regardless of content length */
+  padding: 16px; /* Inner spacing to prevent content from touching edges */
+  border-radius: 16px; /* Rounds the corners of the card for a softer, modern look */
+  background-color: white; /* Sets the card background to white */
+  box-sizing: border-box; /* Ensures padding is included within the fixed height and width */
+width: 100%;
+}
+
+
+.text p {
+  font-size: 16px;
+  color: #475569;
+  word-break: break-word;
+}
+
+.toggle {
+    width: 36px;
+    height: 20px;
+    background-color: #475569;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.toggle::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: #f87171;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: all 0.3s;
+}
+
+.toggle.active {
+    background-color: #c24444;
+}
+
+.toggle.active::before {
+    left: 19px;
+    background-color: #ffffff;
+}
+
+div h4 {
+    padding-bottom: 10px;
+}
+
+.grid-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 10px;
+
+
+}
