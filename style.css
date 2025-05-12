@@ -47,14 +47,15 @@ button {
 
 .flex {
     display: flex;
-    align-items: flex-start;
-    gap: 10px;
+   align-items:flex-start;
+gap:10px;
 
 }
 
-.text {
- padding-top: 10px;
-
+.text{
+display:flex;
+flex-direction:column;
+gap:10px;
 }
 
 .card {
@@ -70,10 +71,9 @@ width: 100%;
 }
 
 
-.text p {
-  font-size: 16px;
-  color: #475569;
-  word-break: break-word;
+h4, p {
+ margin:0;
+padding:0;
 }
 
 .toggle {
@@ -107,9 +107,7 @@ width: 100%;
     background-color: #ffffff;
 }
 
-div h4 {
-    padding-bottom: 10px;
-}
+
 
 .grid-card-wrapper {
     display: grid;
